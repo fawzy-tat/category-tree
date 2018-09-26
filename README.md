@@ -8,10 +8,17 @@ Category tree is a class with 2 main functions
 2- ( get category) returns all the children of a given parent 
 
 Ex :
+
  $c = new CategoryTree;
+ 
  $c->addCategory('A', null);
+ 
  $c->addCategory('B', 'A');
+ 
  $c->addCategory('C', 'A');
+ 
  echo implode(',', $c->getChildren('A'));
+ 
+
 
 Should return B,C 
